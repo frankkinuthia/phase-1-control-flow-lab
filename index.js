@@ -15,23 +15,17 @@ function scuberGreetingForFeet(heightInFeet){
     
   function ternaryCheckCity(city){
   // Write your code here!
-    if (city === "NYC") {
-      return `Ok, sounds good.`
+    return city === "NYC"? `Ok, sounds good.`: `No go.`
     }
-    else {
-      return `No go.`
-    }
-}
 
 function switchOnCharmFromTip(tip){
   // Write your code here!
-  if (tip === "generous") {
-    return `Thank you so much.`;
-  }
-  else if (tip === "not as generous"){
-    return `Thank you.`;
-  }
-  else {
-    return `Bye.`
+  switch (tip) {
+    case "generous" :
+      return `Thank you so much.`;
+    case "not as generous" :
+      return `Thank you.`;
+    default :
+      return `Bye.`
   }
 }
